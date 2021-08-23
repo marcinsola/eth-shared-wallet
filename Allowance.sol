@@ -25,7 +25,7 @@ contract Allowance is Ownable {
     }
 
     function reduceAllowance(address _to, uint _amount) public ownerOrAllowed(_amount) {
-        require(allowance[_to] - _amount >= 0, "Too much to reduce");
+        require(allowance[_to] - _amount > 0, "Too much to reduce");
         emit AllowanceChanged(_to, msg.sender, allowance[_to], allowance[_to] - _amount);
         allowance[_to] -= _amount;
     }
