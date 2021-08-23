@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.6;
 
-import "./Allowance.sol";
+import "Allowance.sol";
 
 contract SharedWallet is Allowance{
     event MoneySent(address indexed _beneficiary, uint _amount);
