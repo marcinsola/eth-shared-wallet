@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/marcinsola/eth-shared-wallet/issues"
   },
-  "homepage": "https://github.com/marcinsola/eth-shared-wallet#readme"
+  "homepage": "https://github.com/marcinsola/eth-shared-wallet#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.0"
+  }
 }
